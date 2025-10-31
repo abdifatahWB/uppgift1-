@@ -10,39 +10,35 @@ namespace uppgift5
     {
         static void Main(string[] args)
         {
-            int day = 4;
-            switch (day)
+            Console.WriteLine("give number between 0 - 5");
+            int grade = Convert.ToInt32(Console.ReadLine()); 
+
+            switch (grade)
+
             {
+
+                case 0:
+                    Console.WriteLine("fail");
+                    break;
                 case 1:
-                    Console.WriteLine("monday");
+                    Console.WriteLine("needs improvement");
                     break;
                 case 2:
-                    Console.WriteLine("tuesday");
+                    Console.WriteLine("ok");
                     break;
                 case 3:
-                    Console.WriteLine("wednesday");
+                    Console.WriteLine("satisfactory");
                     break;
                 case 4:
-                    Console.WriteLine("thursday");
+                    Console.WriteLine("good");
                     break;
                 case 5:
-                    Console.WriteLine("friday");
+                    Console.WriteLine("excellent");
                     break;
-                case 6:
-                    Console.WriteLine("saturday");
-                    break;
-                case 7:
-                    Console.WriteLine("sunday");
+                default: 
+                    Console.WriteLine("fail");
                     break;
                 }
-
-
-
-
-
-
-
-
             }
         }
     }
